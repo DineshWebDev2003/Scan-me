@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website with Icons</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-image: url('web-bg.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center; /* Vertically and horizontally centered */
+      text-align: center;
+      min-height: 100vh; /* Full viewport height */
+      flex-direction: column;
+      padding-top: 20px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 5px; /* Reduced margin */
+    }
+
+    p {
+      font-size: 1.5em;
+      margin: 0; /* Removed margin */
+    }
+
+    /* Adjusted image container margin */
+    .image {
+      width: 100%;
+      height: auto;
+      max-width: 600px;
+      margin: 10px auto; /* Reduced margin */
+      border-radius: 10px;
+      border: 5px solid white;
+    }
+
+    h1:nth-of-type(2) {
+      margin-top: 10px; /* Reduced top margin */
+      margin-bottom: 5px; /* Reduced bottom margin */
+    }
+
+    /* Icon container with space-between layout */
+    .icons {
+      display: flex;
+      justify-content: space-between; /* Space between the icons */
+      gap: 30px; /* Ensures space between icons */
+      position: relative;
+      bottom: 10px; /* Reduced bottom margin to 10px */
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%; /* Width adjusted to provide space */
+    }
+
+    /* Custom icon styles */
+    .icons a {
+      text-decoration: none;
+      color: white;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      font-size: 2.0em; /* Larger icons */
+      transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .icons a:hover {
+      background: rgba(255, 255, 255, 0.8);
+      color: black;
+      transform: scale(1.2); /* Enlarges the icon on hover */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 2.5em;
+      }
+
+      p {
+        font-size: 1.2em;
+      }
+
+      .icons {
+        gap: 15px;
+        bottom: 15px; /* Adjusted for mobile */
+      }
+
+      .icons a {
+        padding: 12px;
+        font-size: 2em;
+      }
+
+      .image {
+        width: 80%;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      .icons {
+        gap: 30px;
+        bottom: 10px; /* Further adjustment for smaller screens */
+      }
+
+      .icons a {
+        padding: 10px;
+        font-size: 1.2em;
+      }
+
+      .image {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>TN HAPPYKIDS</h1>
+    <p>(Playschool & Tuition Centre)</p>
+    <img class="image" src="IMG_20241218_153231.jpg" alt="Logo">
+    <h2>Collect Your Gifts at TN HappyKids School!</h2>
+    
+    <div class="icons">
+      <a href="tel:+91 1800-419-7898" title="Call Now">
+        <i class="fas fa-phone-alt"></i>
+      </a>
+      <a href="https://maps.app.goo.gl/3MYNAzDN9pTfYuwL6" target="_blank" title="View Location">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
